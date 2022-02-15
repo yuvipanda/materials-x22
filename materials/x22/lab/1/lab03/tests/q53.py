@@ -1,0 +1,11 @@
+test = {   'name': 'q53',
+    'points': None,
+    'suites': [   {   'cases': [   {'code': '>>> type(really_highly_rated) == tables.Table\nTrue', 'hidden': False, 'locked': False},
+                                   {'code': '>>> really_highly_rated.num_rows == 29\nTrue', 'hidden': False, 'locked': False},
+                                   {   'code': '>>> print(really_highly_rated.sort(0).take([17]))\nVotes  | Rating | Title | Year | Decade\n895411 | 8.6    | Se7en | 1995 | 1990\n',
+                                       'hidden': False,
+                                       'locked': False}],
+                      'scored': True,
+                      'setup': '',
+                      'teardown': '',
+                      'type': 'doctest'}]}
