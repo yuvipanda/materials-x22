@@ -1,12 +1,3 @@
 test = {   'name': 'q51',
     'points': None,
-    'suites': [   {   'cases': [   {   'code': '>>> # Use .select("Row Labels", "1970") to select the two columns.\n>>> top_1970.labels == ("Row Labels", "1970")\nTrue',
-                                       'hidden': False,
-                                       'locked': False},
-                                   {   'code': '>>> # Use .sort("1970", descending=True) to sort in descreasing order.\n>>> print(top_1970.take(0))\nRow Labels    | 1970\nUnited States | 11\n',
-                                       'hidden': False,
-                                       'locked': False}],
-                      'scored': True,
-                      'setup': '',
-                      'teardown': '',
-                      'type': 'doctest'}]}
+    'suites': [{'cases': [{'code': '>>> round(genghis_distance_from_average_in, 3)\n1.5', 'hidden': False, 'locked': False}], 'scored': True, 'setup': '', 'teardown': '', 'type': 'doctest'}]}
