@@ -1,6 +1,7 @@
 test = {   'name': 'q2_1',
     'points': None,
-    'suites': [   {   'cases': [{'code': ">>> np.random.seed(8)\n>>> np.round(one_sample_mean(salaries, 'salary', 100), 3) == 76699.829\nTrue", 'hidden': False, 'locked': False}],
+    'suites': [   {   'cases': [   {'code': '>>> (slope*13 - 100)/98 <= 0.5\n', 'hidden': False, 'locked': False},
+                                   {'code': '>>> np.round(slope, 4) == 10.7296 # Make sure you are plugging in the SD_x and SD_y in the correct spots!\n', 'hidden': False, 'locked': False}],
                       'scored': True,
                       'setup': '',
                       'teardown': '',
