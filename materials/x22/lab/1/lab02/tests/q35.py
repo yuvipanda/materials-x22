@@ -1,9 +1,7 @@
 test = {   'name': 'q35',
     'points': None,
-    'suites': [   {   'cases': [   {'code': '>>> type(farmers_markets_locations_by_latitude) == tables.Table\nTrue', 'hidden': False, 'locked': False},
-                                   {   'code': '>>> # HINT: Check the order of your table. \n'
-                                               ">>> list(farmers_markets_locations_by_latitude.column('y').take(range(3)))\n"
-                                               '[64.86275, 64.8459, 64.844414]',
+    'suites': [   {   'cases': [   {'code': '>>> type(farmers_markets_locations_by_latitude) == tables.Table\n', 'hidden': False, 'locked': False},
+                                   {   'code': ">>> # HINT: Check the order of your table. \n>>> list(farmers_markets_locations_by_latitude.column('y').take(range(3)))\n",
                                        'hidden': False,
                                        'locked': False}],
                       'scored': True,
