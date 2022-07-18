@@ -88,7 +88,7 @@ class Announce:
                         display(Markdown(str(c)+". "+j))
                         c += 1
     def data8(self):
-        display(Markdown("The Data 8 Reference might be helpful to look over for examples and usage: [Data 8 Reference](http://data8.org/fa21/python-reference.html)"))
+        display(Markdown("The Data 8 Reference might be helpful to look over for examples and usage: [Data 8 Reference](http://data8.org/sp22/python-reference.html)"))
     def furtherTips(self):
         display(Markdown("If you are having more trouble please feel free to consult a staff member at [Office Hours](https://oh.data8.org)\
                         \n or see the error message below "))
@@ -170,6 +170,13 @@ def test_exception(self, etype, value, tb, tb_offset=None):
             announce.feedback()
         self.showtraceback((etype, value, tb), tb_offset=tb_offset)
     except:
+        announce = Announce(etype, value, tb, tb_offset)
+        if announce.print:
+            announce.title()
+            announce.tips()
+            announce.data8()
+            announce.furtherTips()
+            announce.feedback()
         self.showtraceback((etype, value, tb), tb_offset=tb_offset)
     
 get_ipython().set_custom_exc((Exception,), test_exception)
