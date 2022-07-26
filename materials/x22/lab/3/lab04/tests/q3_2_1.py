@@ -8,7 +8,8 @@ test = {   'name': 'q3_2_1',
                                                '...     t = test_my_features.row(r)\n'
                                                '...     return classify(t, train_my_features, g, k) == Counter(np.take(g, np.argsort(fast_distances(t, train_my_features))[:k])).most_common(1)[0][0]\n'
                                                '>>> check_5_nn = [check(i, 5) for i in np.arange(11)]\n'
-                                               '>>> all(check_5_nn)\n',
+                                               '>>> all(check_5_nn)\n'
+                                               'True',
                                        'hidden': False,
                                        'locked': False},
                                    {   'code': '>>> # This test just checks to see if your classify function works correctly \n'
@@ -19,7 +20,8 @@ test = {   'name': 'q3_2_1',
                                                '...     t = test_my_features.row(r)\n'
                                                '...     return classify(t, train_my_features, g, k) == Counter(np.take(g, np.argsort(fast_distances(t, train_my_features))[:k])).most_common(1)[0][0]\n'
                                                '>>> check_11_nn = [check(i, 11) for i in np.arange(11)]\n'
-                                               '>>> all(check_11_nn)\n',
+                                               '>>> all(check_11_nn)\n'
+                                               'True',
                                        'hidden': False,
                                        'locked': False}],
                       'scored': True,
