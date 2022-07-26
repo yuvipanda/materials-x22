@@ -170,6 +170,13 @@ def test_exception(self, etype, value, tb, tb_offset=None):
             announce.feedback()
         self.showtraceback((etype, value, tb), tb_offset=tb_offset)
     except:
+        announce = Announce(etype, value, tb, tb_offset)
+        if announce.print:
+            announce.title()
+            announce.tips()
+            announce.data8()
+            announce.furtherTips()
+            announce.feedback()
         self.showtraceback((etype, value, tb), tb_offset=tb_offset)
     
 get_ipython().set_custom_exc((Exception,), test_exception)
