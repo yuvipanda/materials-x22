@@ -1,5 +1,5 @@
 test = {   'name': 'q1_11',
-    'points': [0, 0, 0, 4],
+    'points': None,
     'suites': [   {   'cases': [   {   'code': '>>> # Incorrect labels for columns\n'
                                                '>>> t = stats_for_year(1990)\n'
                                                ">>> t.labels == ('geo', 'population_total', 'children_per_woman_total_fertility', 'child_mortality_under_5_per_1000_born')\n"
