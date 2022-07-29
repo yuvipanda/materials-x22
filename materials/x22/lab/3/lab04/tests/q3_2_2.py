@@ -1,5 +1,5 @@
 test = {   'name': 'q3_2_2',
-    'points': [3],
+    'points': None,
     'suites': [   {   'cases': [   {   'code': '>>> from collections import Counter\n'
                                                ">>> g = train_movies.column('Genre')\n"
                                                '>>> r = np.where(test_movies[\'Title\'] == "godzilla")[0][0]\n'
