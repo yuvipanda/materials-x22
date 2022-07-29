@@ -1,5 +1,5 @@
 test = {   'name': 'q2_1_2',
-    'points': [1, 2],
+    'points': None,
     'suites': [   {   'cases': [   {   'code': '>>> correct_dis = 0.001406116\n'
                                                '>>> dis = distance_two_features("clerks.", "the godfather", "water", "feel")\n'
                                                '>>> np.isclose(np.round(dis, 9), correct_dis) # Make sure you can use any two movies\n'

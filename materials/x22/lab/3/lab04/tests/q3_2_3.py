@@ -1,5 +1,5 @@
 test = {   'name': 'q3_2_3',
-    'points': [3],
+    'points': None,
     'suites': [   {   'cases': [   {   'code': '>>> # This test just checks that your classify_feature_row works correctly.\n'
                                                '>>> def check(r):\n'
                                                '...     t = test_my_features.row(r)\n'
