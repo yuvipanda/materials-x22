@@ -1,7 +1,9 @@
 {
     "XeusPythonEnv": {
         "packages": [
-            "pandas"
+            "pandas",
+            "django",
+            "there"
         ]
     }
 }
