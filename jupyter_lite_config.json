@@ -3,7 +3,8 @@
         "packages": [
             "pandas",
             "django",
-            "there"
+            "matplotlib",
+            "ipympl"
         ]
     }
 }
