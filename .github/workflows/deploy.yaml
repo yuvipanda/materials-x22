@@ -28,7 +28,6 @@ jobs:
       - name: Build the JupyterLite site
         run: |
           repo2jupyterlite . dist
-          jupyter lite build --contents content --output-dir dist
       - name: Upload generated site
         uses: actions/upload-pages-artifact@v1
         with:
