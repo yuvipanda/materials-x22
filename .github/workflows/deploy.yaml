@@ -23,7 +23,7 @@ jobs:
           python -m pip install git+https://github.com/yuvipanda/repo2jupyterlite@main
       - name: Build the JupyterLite site
         run: |
-          repo2jupyterlite . --output-dir dist
+          repo2jupyterlite . dist
           cp README.md content
           jupyter lite build --contents content --output-dir dist
       - name: Upload artifact
