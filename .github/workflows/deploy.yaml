@@ -1,28 +1,26 @@
-name: Build and Deploy
-
+name: Build and Publish jupyterlite page to GitHub Pages
 on:
   push:
     branches:
-      - main
+    - main  # specify 'master' if that is your main branch
   pull_request:
     branches:
-      - '*'
+    - '*'
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        shell: bash -l {0}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Build repo2jupyterlite
-        uses: yuvipanda/repo2jupyterlite-action@main
-      - name: Upload generated site
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: ./dist
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Build repo2jupyterlite
+      uses: yuvipanda/repo2jupyterlite-action@main
+      with:
+        repo2jupyterlite_version: latest
+    - name: Upload generated site
+      uses: actions/upload-pages-artifact@v1
+      with:
+        path: ./dist
 
   deploy:
     needs: build
@@ -37,6 +35,6 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v1
