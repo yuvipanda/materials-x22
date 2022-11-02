@@ -17,10 +17,12 @@ jobs:
       uses: yuvipanda/repo2jupyterlite-action@main
       with:
         repo2jupyterlite_version: latest
+        contents_path: .
+        destination_path: ./out
     - name: Upload generated site
       uses: actions/upload-pages-artifact@v1
       with:
-        path: ./dist
+        path: ./out
 
   deploy:
     needs: build
