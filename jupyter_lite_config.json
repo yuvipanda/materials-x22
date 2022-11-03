@@ -4,7 +4,9 @@
             "pandas",
             "django",
             "matplotlib",
-            "ipympl"
+            "ipympl",
+            "datascience",
+            "otter-grader"
         ]
     }
 }
